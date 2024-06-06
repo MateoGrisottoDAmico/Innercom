@@ -27,13 +27,13 @@ body{
     padding-top: 80px;
 }
   
-  .carousel-inner {
+.carousel-inner {
     width: 90%;
     max-width: 900px;
     margin: auto;
 }
   
-  .carousel-inner img {
+.carousel-inner img {
     width: 100%;
     height: auto;
     max-height: 500px;
@@ -52,24 +52,24 @@ body{
 }
 }
 
-  .carousel-control-prev {
+.carousel-control-prev {
     left: 0;
 }
   
-  .carousel-control-next {
+.carousel-control-next {
     right: 0;
 }
   
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
     background-size: 100% 100%;
     width: 100%;
     height: 100%; 
     background-color: transparent;
 }
   
-  .carousel-control-prev,
-  .carousel-control-next {
+.carousel-control-prev,
+.carousel-control-next {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,10 +91,12 @@ body{
 
 .inner-container-desc{
     display: flex;
-    width: 50%;
+    width: 60%;
+    flex-direction: column;
+    margin-bottom: 10px;
 }
 
-.container-fotos{
+.container-cards{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -102,14 +104,20 @@ body{
     background-color: #005E78;
 }
 
-.inner-container-fotos{
+.inner-container-cards{
     width: 90%;
     padding: 40px;
 }
 
 @media (min-width: 1250px){
-    .inner-container-fotos{
+    .inner-container-cards{
         width: 50%;
+    }
+}
+
+@media (max-width: 1250px){
+    .inner-container-desc{
+        width: 80%;
     }
 }
 
@@ -132,33 +140,27 @@ body{
     padding: 40px 0;
 }
 
-.container-ingtitulo{
+.container-titulo{
     width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 10px;
 }
 
-.container-ingdesc{
+.container-sbtitulo{
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.inner-container-ingdesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
     margin-bottom: 10px;
+    padding-top: 50px;
 }
 
-.inner-container-inglist{
+.inner-container-list{
     display: flex;
     width: 100%;
     justify-content: center;
     padding: 40px;
 }
-
 
 .soporte{
     display: flex;
@@ -169,34 +171,6 @@ body{
     background-color: #424242;
 }
 
-.container-soportetitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.container-soportedesc{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.inner-container-soportedesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.inner-container-soportelist{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 40px;
-}
-
-
 .telefonia{
     display: flex;
     justify-content: center;
@@ -206,177 +180,12 @@ body{
     background-color: #005E78;
 }
 
-.container-telefoniatitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.container-telefoniadesc{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.inner-container-telefoniadesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.inner-container-telefonialist{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 40px;
-}
-
-
 .control{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
     padding: 40px 0;
-}
-
-.container-controltitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.container-controldesc{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.inner-container-controldesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.inner-container-controllist{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 40px;
-}
-
-
-.container-auditoriatitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding-top: 50px;
-}
-
-.container-auditoriadesc{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.inner-container-auditoriadesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.inner-container-auditorialist{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 40px;
-    flex-direction: column;
-}
-
-
-.container-pabxtitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding-top: 50px;
-}
-
-.container-pabxdesc{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.inner-container-pabxdesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.inner-container-pabxlist{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 50px;
-}
-
-
-.container-admtitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding-top: 50px;
-}
-
-.container-admdesc{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.inner-container-admdesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-
-.container-invtitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
-    padding-top: 50px;
-}
-
-.container-invdesc{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.inner-container-invdesc{
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    margin-bottom: 10px;
-}
-
-.inner-container-invlist{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    padding: 40px;
 }
 
 .parallax{
@@ -401,6 +210,8 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
+    margin: 30px;
+    margin-left: 0;
 }
 
 .inner-separador-container{
@@ -424,13 +235,6 @@ body{
     flex-direction: column;
     width: 100%;
     padding: 40px 0;
-}
-
-.container-clientestitulo{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 10px;
 }
 
 .inner-container-clienteslist{
